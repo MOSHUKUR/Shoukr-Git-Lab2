@@ -1,0 +1,27 @@
+git clone git@github.com:MOSHUKUR/Shoukr-Git-Lab2.git
+git branch dev
+git branch test
+git checkout dev
+touch file1dev
+touch file2dev
+git add .
+git commit -m "two file devs"
+git push origin dev
+git checkout test
+touch file1test
+touch file2test
+git add .
+git commit -m "two files test"
+git push origin test
+git checkout main
+git merge dev
+git merge test
+git branch -d dev
+git branch -d test
+git push origin :dev
+git push origin :test
+git tag -a v1.4 -m "version"
+git tag
+git push origin v1.4
+git tag -d v1.4
+git push origin --delete v1.4
